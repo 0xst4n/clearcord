@@ -31,7 +31,7 @@ async def clear_dm(before_date):
                 if message.created_at < before_date:
                     message_count+=1
                     try:
-                        #  await message.delete()
+                        await message.delete()
                         pass
                     except:
                         print(f"didnt delete message {friend.name}:{message.created_at}:{message.content}" + "\n")
